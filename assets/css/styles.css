@@ -51,6 +51,13 @@ a {
   }  
 }
 
+.post {
+  .post-meta-data {
+    font-size: .9em;
+    margin-bottom: 15px;
+  }
+}
+
 footer {
   padding-top: 25px;
   text-align: center;
