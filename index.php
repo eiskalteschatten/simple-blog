@@ -10,6 +10,8 @@
     <meta name="theme-color" content="#000000">
     <meta name="color-scheme" content="light dark">
 
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
     <link rel="stylesheet" href="/assets/css/styles.css">
 
     <?php
