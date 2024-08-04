@@ -31,7 +31,7 @@
     ?>
   </head>
   <body>
-    <header>
+    <header class="container">
       <h1>Simple Blog</h1>
 
       <nav class="main-nav">
@@ -52,7 +52,7 @@
 
     <?php include_once($page_path); ?>
 
-    <footer>
+    <footer class="container">
       &copy; No One 2023
     </footer>
   </body>
