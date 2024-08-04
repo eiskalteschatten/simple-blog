@@ -32,7 +32,9 @@
   </head>
   <body>
     <header class="container">
-      <h1>Simple Blog</h1>
+      <div class="blog-title">
+        <h1>Simple Blog</h1>
+      </div>
 
       <nav class="main-nav">
         <?php
