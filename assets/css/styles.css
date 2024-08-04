@@ -68,6 +68,13 @@ a {
   }
 }
 
+.archive-link {
+  margin-top: 50px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
 footer {
   padding-top: 50px;
   text-align: center;

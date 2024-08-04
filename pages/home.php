@@ -3,6 +3,8 @@ $posts_dir = getcwd() . "/content/posts";
 $date_dirs = glob($posts_dir . '/*' , GLOB_ONLYDIR);
 rsort($date_dirs);
 
+$date_dirs = array_slice($date_dirs, 0, 10);
+
 $posts = [];
 
 foreach ($date_dirs as $date_dir) {
@@ -35,4 +37,8 @@ foreach ($date_dirs as $date_dir) {
       </div>
     </article>
   <?php endforeach; ?>
+
+  <div class="archive-link">
+    <a href="/archive">Post Archive</a>
+  </div>
 </main>
