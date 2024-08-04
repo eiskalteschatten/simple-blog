@@ -44,11 +44,11 @@ a {
   display: flex;
   gap: 15px;
   margin: 20px 0;
-}
 
-.selected-link {
-  font-weight: bold;
-  color: var(--color);
+  .selected-link {
+    font-weight: bold;
+    color: var(--color);
+  }  
 }
 
 footer {
