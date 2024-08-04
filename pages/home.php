@@ -19,7 +19,7 @@ foreach ($date_dirs as $date_dir) {
 <main class="container">
   <?php foreach ($posts as $post): ?>
     <article class="post">
-      <h2>
+      <h2 class="post-title">
         <a href="/post/<?= $post["id"] ?>"><?= $post["title"] ?></a>
       </h2>
 
