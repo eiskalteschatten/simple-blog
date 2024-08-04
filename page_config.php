@@ -10,6 +10,10 @@ $pages_config = array(
     "mainNavTitle" => "Archive",
     "title" => "Archive"
   ),
+  "post" => array(
+    "title" => "Post",
+    "hasParams" => true
+  ),
   "404" => array(
     "title" => "Page Not Found"
   )
@@ -32,8 +36,17 @@ function parse_uri_string(): string {
   return implode("/", $path_parts);
 }
 
-$path_parts = parse_uri();
-$page_key = count($path_parts) === 0 || $path_parts[0] === "" ? "home" : implode("/", $path_parts);
+function get_page_key($pages_config): string {
+  $path_parts = parse_uri();
+  
+  if ($pages_config[$path_parts[0]]["hasParams"] === true) {
+    return "/" . $path_parts[0];
+  }
+  
+  return count($path_parts) === 0 || $path_parts[0] === "" ? "home" : implode("/", $path_parts);
+}
+
+$page_key = get_page_key($pages_config);
 $page_path = "pages/" . $page_key . ".php";
 
 if (!file_exists($page_path)) {
