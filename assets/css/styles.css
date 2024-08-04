@@ -52,7 +52,9 @@ a {
 }
 
 .post {
-  margin-bottom: 100px;
+  &:not(:last-of-type) {
+    margin-bottom: 100px;
+  }
 
   .post-meta-data {
     font-size: .9em;
@@ -61,7 +63,7 @@ a {
 }
 
 footer {
-  padding-top: 25px;
+  padding-top: 50px;
   text-align: center;
   opacity: .8;
   transition: opacity 200ms;
