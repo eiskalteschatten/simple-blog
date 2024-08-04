@@ -18,17 +18,15 @@ foreach ($date_dirs as $date_dir) {
 
 <main class="container">
   <?php foreach ($posts as $post): ?>
-    <article class="post">
-      <h2 class="post-title">
-        <a href="/post/<?= $post["id"] ?>"><?= $post["title"] ?></a>
-      </h2>
-
-      <div class="post-meta-data">
+    <article class="archive-post">
+      <div class="post-date">
         <?php
           $date = new DateTimeImmutable($post['publishedDate']);
           echo $date->format('j F Y');
         ?>
       </div>
+      
+      <a href="/post/<?= $post["id"] ?>" class="post-link"><?= $post["title"] ?></a>
     </article>
   <?php endforeach; ?>
 </main>
