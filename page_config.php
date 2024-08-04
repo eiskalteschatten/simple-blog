@@ -5,24 +5,6 @@ $pages_config = array(
     "inMainNav" => true,
     "mainNavTitle" => "Home"
   ),
-  "test" => array(
-    "title" => "Test Page 1",
-    "scripts" => [
-      ["testscripts.js", "async"]
-    ],
-    "styles" => ["teststyles.css"],
-    "inMainNav" => true,
-    "mainNavTitle" => "Test Page 1"
-  ),
-  "deeper/test" => array(
-    "title" => "Test Page 2",
-    "scripts" => [
-      ["testscripts.js", "defer"]
-    ],
-    "styles" => ["teststyles.css"],
-    "inMainNav" => true,
-    "mainNavTitle" => "Test Page 2"
-  ),
   "404" => array(
     "title" => "Page Not Found"
   )
