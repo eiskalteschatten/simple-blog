@@ -1,13 +1,18 @@
 <?php
 $posts_dir = getcwd() . "/content/posts";
-$dirs = glob($posts_dir . '/*' , GLOB_ONLYDIR);
+$date_dirs = glob($posts_dir . '/*' , GLOB_ONLYDIR);
+rsort($date_dirs);
 
 $posts = [];
 
-foreach ($dirs as $dir) {
-  $meta_contents_str = file_get_contents($dir . "/meta.json");
-  $meta_contents = json_decode($meta_contents_str, true);
-  $posts[] = $meta_contents;
+foreach ($date_dirs as $date_dir) {
+  $dirs = glob($date_dir . '/*' , GLOB_ONLYDIR);
+
+  foreach ($dirs as $dir) {
+    $meta_contents_str = file_get_contents($dir . "/meta.json");
+    $meta_contents = json_decode($meta_contents_str, true);
+    $posts[] = $meta_contents;
+  }
 }
 ?>
 

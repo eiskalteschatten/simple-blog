@@ -1,4 +1,4 @@
-<figure><img loading="lazy" decoding="async" src="/images/posts/ed-robertson-eeSdJfLfx1A-unsplash.jpg" alt=""></figure>
+<figure><img loading="lazy" decoding="async" src="/assets/images/posts/ed-robertson-eeSdJfLfx1A-unsplash.jpg" alt=""></figure>
 
 Last year, I [compiled a list of my favorite books](https://blog.alexseifert.com/2023/01/09/my-favorite-books-from-2022/) from 2022 which is the first time I had ever done that. Since I enjoyed thoroughly enjoyed reliving my favorite books throughout the year, I decided to do the same again this year and put together a list of my favorite books from 2023.
 
