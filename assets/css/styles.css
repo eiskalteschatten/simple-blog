@@ -52,8 +52,10 @@ a {
 }
 
 .post {
-  &:not(:last-of-type) {
-    margin-bottom: 100px;
+  margin: 50px 0;
+
+  &:last-of-type {
+    margin-bottom: 0;
   }
 
   .post-meta-data {
