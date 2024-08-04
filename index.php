@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title><?php if (isset($page_config["title"])) echo $page_config["title"] . " | "; ?> Simple Frameworkless Website</title>
+    <title><?php if (isset($page_config["title"])) echo $page_config["title"] . " | "; ?> Simple Blog</title>
 
     <link rel="stylesheet" href="/assets/css/styles.css">
 
@@ -26,7 +26,7 @@
   </head>
   <body>
     <header>
-      <h1>Simple Frameworkless Website</h1>
+      <h1>Simple Blog</h1>
 
       <nav class="main-nav">
         <?php
