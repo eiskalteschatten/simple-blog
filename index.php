@@ -1,8 +1,14 @@
 <?php require_once("page_config.php"); ?>
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <title><?php if (isset($page_config["title"])) echo $page_config["title"] . " | "; ?> Simple Blog</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="color-scheme" content="light dark">
 
     <link rel="stylesheet" href="/assets/css/styles.css">
 
