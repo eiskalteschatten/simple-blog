@@ -5,6 +5,11 @@ $pages_config = array(
     "inMainNav" => true,
     "mainNavTitle" => "Home"
   ),
+  "archive" => array(
+    "inMainNav" => true,
+    "mainNavTitle" => "Archive",
+    "title" => "Archive"
+  ),
   "404" => array(
     "title" => "Page Not Found"
   )
